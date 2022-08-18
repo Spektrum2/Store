@@ -3,8 +3,7 @@ package pro.sky.java.course2.store.service;
 import org.springframework.stereotype.Service;
 import pro.sky.java.course2.store.model.Cart;
 
-import java.util.Set;
-
+import java.util.List;
 
 @Service
 public class StoreService {
@@ -18,7 +17,7 @@ public class StoreService {
         cart.addId(item);
     }
 
-    public Set<Integer> getItem() {
+    public List<Integer> getItem() {
         return cart.getId();
     }
 

@@ -3,20 +3,19 @@ package pro.sky.java.course2.store.model;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.SessionScope;
 
-import java.util.HashSet;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 @Component
 @SessionScope
 public class Cart {
-    private final Set<Integer> id;
+    private final List<Integer> id;
 
     public Cart(int id) {
-        this.id = new HashSet<>(List.of(id));
+        this.id = new ArrayList<>(List.of(id));
     }
 
-    public Set<Integer> getId() {
+    public List<Integer> getId() {
         return id;
     }
 

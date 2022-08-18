@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import pro.sky.java.course2.store.service.StoreService;
 
-import java.util.Set;
+import java.util.List;
 
 @RestController
-@RequestMapping("/store/order")
+@RequestMapping("/order")
 public class StoreController {
     private final StoreService storeService;
 
@@ -23,7 +23,7 @@ public class StoreController {
     }
 
     @GetMapping("/get")
-    public Set<Integer> getItem() {
+    public List<Integer> getItem() {
         return storeService.getItem();
     }
 
