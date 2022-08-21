@@ -5,7 +5,6 @@ import org.springframework.web.context.annotation.SessionScope;
 import pro.sky.java.course2.store.model.Item;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
